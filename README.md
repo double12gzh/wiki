@@ -1,4 +1,4 @@
-# 大海星的WIKI
+# 大海星的wiki
 
 # [WiKi-1](https://double12gzh.gitee.io/wiki/)(推荐)
 # [Wiki-2](https://double12gzh.github.io/wiki/)
