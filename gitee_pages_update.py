@@ -150,13 +150,19 @@ class Action:
                                      headers=headers,
                                      data=form_data,
                                      timeout=5)
+            print(f'{resp.text}')
+
             return resp.status_code == 200
         except Exception as e:
             print(f'deploy error occurred, message: {e}')
             return False
 
     def __call__(self, *args, **kwargs):
-        res = self.login() and self.rebuild_pages()
+        res_login = self.login()
+        res_rebuild = self.rebuild_pages()
+
+        res = res_login and res_rebuild
+
         print(f'rebuild result: {res}')
 
 
