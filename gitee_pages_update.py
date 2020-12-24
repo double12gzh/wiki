@@ -150,7 +150,7 @@ class Action:
                                      headers=headers,
                                      data=form_data,
                                      timeout=5)
-            print(f'{resp.text}')
+        #    print(f'{resp.text}')
 
             return resp.status_code == 200
         except Exception as e:
